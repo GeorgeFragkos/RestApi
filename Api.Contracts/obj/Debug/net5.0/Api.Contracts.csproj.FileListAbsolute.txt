@@ -1,0 +1,12 @@
+D:\C#\RestApi\RestApi\Api.Contracts\obj\Debug\net5.0\Api.Contracts.csprojAssemblyReference.cache
+D:\C#\RestApi\RestApi\Api.Contracts\obj\Debug\net5.0\Api.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\RestApi\RestApi\Api.Contracts\obj\Debug\net5.0\Api.Contracts.AssemblyInfoInputs.cache
+D:\C#\RestApi\RestApi\Api.Contracts\obj\Debug\net5.0\Api.Contracts.AssemblyInfo.cs
+D:\C#\RestApi\RestApi\Api.Contracts\obj\Debug\net5.0\Api.Contracts.csproj.CoreCompileInputs.cache
+D:\C#\RestApi\RestApi\Api.Contracts\bin\Debug\net5.0\Api.Contracts.deps.json
+D:\C#\RestApi\RestApi\Api.Contracts\bin\Debug\net5.0\Api.Contracts.dll
+D:\C#\RestApi\RestApi\Api.Contracts\bin\Debug\net5.0\ref\Api.Contracts.dll
+D:\C#\RestApi\RestApi\Api.Contracts\bin\Debug\net5.0\Api.Contracts.pdb
+D:\C#\RestApi\RestApi\Api.Contracts\obj\Debug\net5.0\Api.Contracts.dll
+D:\C#\RestApi\RestApi\Api.Contracts\obj\Debug\net5.0\ref\Api.Contracts.dll
+D:\C#\RestApi\RestApi\Api.Contracts\obj\Debug\net5.0\Api.Contracts.pdb

@@ -2493,6 +2493,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Api.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Api.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Contracts.dll": {}
+        }
       }
     }
   },
@@ -8252,10 +8262,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Api.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Api.Contracts/Api.Contracts.csproj",
+      "msbuildProject": "../Api.Contracts/Api.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Api.Contracts >= 1.0.0",
       "AspNetCore.Authentication.ApiKey >= 5.1.0",
       "AutoMapper >= 10.1.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
@@ -8281,11 +8297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Demo\\Api\\RestfulApi\\API\\API.csproj",
+      "projectUniqueName": "D:\\C#\\RestApi\\RestApi\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\C#\\Demo\\Api\\RestfulApi\\API\\API.csproj",
+      "projectPath": "D:\\C#\\RestApi\\RestApi\\API\\API.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Demo\\Api\\RestfulApi\\API\\obj\\",
+      "outputPath": "D:\\C#\\RestApi\\RestApi\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8301,7 +8317,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
+              "projectPath": "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

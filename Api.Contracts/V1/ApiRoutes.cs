@@ -23,7 +23,7 @@ namespace API.Contracts.V1
         }
         public static class Identity
         {
-            public const string Login = Base + "/identity/loggin";
+            public const string Login = Base + "/identity/login";
 
             public const string Register = Base + "/identity/register";
 

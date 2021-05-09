@@ -3238,6 +3238,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Api.Contracts": "1.0.0",
           "AspNetCore.Authentication.ApiKey": "5.1.0",
           "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
@@ -3265,6 +3266,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Api.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Api.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Contracts.dll": {}
+        }
       }
     }
   },
@@ -10284,6 +10295,11 @@
       "type": "project",
       "path": "../API/API.csproj",
       "msbuildProject": "../API/API.csproj"
+    },
+    "Api.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Api.Contracts/Api.Contracts.csproj",
+      "msbuildProject": "../Api.Contracts/Api.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10309,11 +10325,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Demo\\Api\\RestfulApi\\TestApiIntegration\\TestApiIntegration.csproj",
+      "projectUniqueName": "D:\\C#\\RestApi\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
       "projectName": "TestApiIntegration",
-      "projectPath": "D:\\C#\\Demo\\Api\\RestfulApi\\TestApiIntegration\\TestApiIntegration.csproj",
+      "projectPath": "D:\\C#\\RestApi\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Demo\\Api\\RestfulApi\\TestApiIntegration\\obj\\",
+      "outputPath": "D:\\C#\\RestApi\\RestApi\\TestApiIntegration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10330,8 +10346,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\C#\\Demo\\Api\\RestfulApi\\API\\API.csproj": {
-              "projectPath": "D:\\C#\\Demo\\Api\\RestfulApi\\API\\API.csproj"
+            "D:\\C#\\RestApi\\RestApi\\API\\API.csproj": {
+              "projectPath": "D:\\C#\\RestApi\\RestApi\\API\\API.csproj"
             }
           }
         }

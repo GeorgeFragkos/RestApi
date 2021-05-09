@@ -12,7 +12,8 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\C#\\Demo\\Api\\RestfulApi\\API", "API.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Api.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\C#\\RestApi\\RestApi\\Api.Contracts", "Api.Contracts.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\C#\\RestApi\\RestApi\\API", "API.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestApiIntegration")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
