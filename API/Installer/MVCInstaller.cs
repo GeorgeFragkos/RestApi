@@ -75,39 +75,6 @@ namespace API.Installer
 
             services.AddSingleton<IAuthorizationHandler, WorksForCompanyHandler>();
 
-            services.AddSwaggerGen(x =>
-            {
-                x.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" });
-                x.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
-
-                var security = new OpenApiSecurityScheme
-                {
-                    Name = "JWT Authentication",
-                    Description = "Enter JWT Bearer token **_only_**",
-                    In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.Http,
-                    Scheme = "bearer", 
-                    BearerFormat = "JWT",
-                    Reference = new OpenApiReference
-                    {
-                        Id = JwtBearerDefaults.AuthenticationScheme,
-                        Type = ReferenceType.SecurityScheme
-                    }
-                };
-
-                x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                {
-                    Name = "Authorization",
-                    Type = SecuritySchemeType.ApiKey,
-                    In = ParameterLocation.Header,
-                    Description = "JWT Authorization header using the Bearer scheme."
-                });
-                x.AddSecurityRequirement(new OpenApiSecurityRequirement
-                        {
-                            {new OpenApiSecurityScheme{Reference = new OpenApiReference{Id = "Bearer",Type=ReferenceType.SecurityScheme}}
-                            ,new List<string>()
-                    } });
-            });
         }
     }
 }

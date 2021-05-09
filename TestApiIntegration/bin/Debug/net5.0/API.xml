@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Authorization.WorksForCompanyHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,API.Authorization.WorksForCompanyRequirment)">
+            <summary>
+            if the email ends whith something i require authorize else reject me
+            </summary>
+            <param name="context"></param>
+            <param name="requirement"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:API.Controllers.V1.TagsController.GetAll">
+            <summary>
+            Returns all the tags in the system
+            </summary>
+            <response code ="200">Returns all the tags in the system</response>
+        </member>
+        <member name="M:API.Controllers.V1.TagsController.Create(API.Contracts.V1.Requests.CreateTagRequest)">
+            <summary>
+            Creates a tag in the system
+            </summary>
+            <remarks>
+                Sample **request** : 
+                    Post /api/v1/tags
+                    {
+                        "name" : "Some name"
+                    }
+            </remarks>
+            <response code ="200">Creates a tag in the system</response>
+            <response code="400">Unable to create the tag due to validation error</response>
+        </member>
+    </members>
+</doc>

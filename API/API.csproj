@@ -5,6 +5,12 @@
     <UserSecretsId>aspnet-API-95A6E46F-4C5C-4448-B232-175EB57B8A2E</UserSecretsId>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+	
+	
   <ItemGroup>
     <PackageReference Include="AspNetCore.Authentication.ApiKey" Version="5.1.0" />
     <PackageReference Include="AutoMapper" Version="10.1.1" />
@@ -19,6 +25,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.3" />

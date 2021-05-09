@@ -231,3 +231,9 @@ D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.D
 D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\FluentValidation.dll
 D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\API.xml
+D:\C#\Demo\Api\RestfulApi\API\obj\Debug\net5.0\API.xml
+D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\Scrutor.dll
+D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Filters.dll
+D:\C#\Demo\Api\RestfulApi\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
