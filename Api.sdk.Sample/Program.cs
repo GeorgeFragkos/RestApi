@@ -3,7 +3,7 @@ using API.Contracts.V1.Requests;
 using Refit;
 using System.Threading.Tasks;
 
-namespace Tweetbook.sdk.Sample
+namespace Api.sdk.Sample
 {
     public class Program
     {
