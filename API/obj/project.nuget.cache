@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+iX/6okt9ctHYsVQd4JoBMMC2t/AL1g+b3IwZ9iGyOFZXMe/3Jj/q31XZ2ALFyG+kTGegBTbucXxJjZbCNwZlw==",
+  "dgSpecHash": "p/TRC0HDp/+lY4WOtP3Vew19qaWmXlr6Db3QKcQxymPEdL4XhN7vjONCcYk+h2Y8PPuud4/eWU/2srSuhqixAg==",
   "success": true,
   "projectFilePath": "D:\\C#\\Git-Api\\RestApi\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,6 @@
     "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.5\\microsoft.aspnetcore.authentication.jwtbearer.5.0.5.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.5\\microsoft.aspnetcore.cryptography.internal.5.0.5.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.5\\microsoft.aspnetcore.cryptography.keyderivation.5.0.5.nupkg.sha512",
-    "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.5\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.5.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.5\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.5.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\5.0.5\\microsoft.aspnetcore.identity.ui.5.0.5.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -36,8 +35,12 @@
     "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.6\\microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+    "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks\\5.0.5\\microsoft.extensions.diagnostics.healthchecks.5.0.5.nupkg.sha512",
+    "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.abstractions\\5.0.5\\microsoft.extensions.diagnostics.healthchecks.abstractions.5.0.5.nupkg.sha512",
+    "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.entityframeworkcore\\5.0.5\\microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.5.0.5.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\5.0.5\\microsoft.extensions.fileproviders.embedded.5.0.5.nupkg.sha512",
+    "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\5.0.0\\microsoft.extensions.hosting.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.5\\microsoft.extensions.identity.core.5.0.5.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.identity.stores\\5.0.5\\microsoft.extensions.identity.stores.5.0.5.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",

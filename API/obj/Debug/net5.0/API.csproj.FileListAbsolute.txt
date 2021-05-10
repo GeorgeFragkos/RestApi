@@ -347,7 +347,6 @@ D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\System.Net.Http.Formatting.dll
 D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
@@ -414,3 +413,6 @@ D:\C#\Git-Api\RestApi\API\obj\Debug\net5.0\ref\API.dll
 D:\C#\Git-Api\RestApi\API\obj\Debug\net5.0\API.xml
 D:\C#\Git-Api\RestApi\API\obj\Debug\net5.0\API.pdb
 D:\C#\Git-Api\RestApi\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:\C#\Git-Api\RestApi\API\bin\Debug\net5.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
