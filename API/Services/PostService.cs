@@ -54,26 +54,26 @@ namespace API.Services
 
         public async Task<Post> GetPostByIdAsync(Guid postId)
         {
-            return await _dataContext.Posts.SingleOrDefaultAsync(x => x.Id == postId);
+           
+            return await _dataContext.Posts.Include(x => x.Tags).SingleOrDefaultAsync(x => x.Id == postId);
         }
 
-        public async Task<List<Post>> GetPostsAsync()
+        public async Task<List<Post>> GetPostsAsync(PaginationFilter paginationFilter = null)
         {
-            var posts = await _dataContext.Posts.ToListAsync();
-
-            foreach (Post post in posts) 
+            if (paginationFilter == null)
             {
-                var postTags = await GetPostTagsAsync(post.Id);
-                post.Tags = postTags;
+                return await _dataContext.Posts.Include(x => x.Tags).ToListAsync();  
             }
-            return posts;
+
+            var skip = (paginationFilter.PageNumber - 1) * paginationFilter.PageSize;
+            return await _dataContext.Posts.Include(x => x.Tags)
+                .Skip(skip).Take(paginationFilter.PageSize).ToListAsync();
         }
 
         public async Task<bool> UpdatePostAsync(Post postToUpdate)
         {
             _dataContext.Posts.Update(postToUpdate);
             var updated = await _dataContext.SaveChangesAsync();
-
             return updated > 0;
         }
 

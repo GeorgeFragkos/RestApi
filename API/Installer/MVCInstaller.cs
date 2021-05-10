@@ -12,6 +12,7 @@ using API.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using FluentValidation.AspNetCore;
 using API.Filters;
+using Microsoft.AspNetCore.Http;
 
 namespace API.Installer
 {
@@ -74,7 +75,13 @@ namespace API.Installer
             });
 
             services.AddSingleton<IAuthorizationHandler, WorksForCompanyHandler>();
-
+            services.AddSingleton<IUriService>(provider =>
+            {
+                var accessor = provider.GetRequiredService<IHttpContextAccessor>();
+                var request = accessor.HttpContext.Request;
+                var absoluteUri = string.Concat(request.Scheme, "://", request.Host.ToUriComponent(), "/");
+                return new UriService(absoluteUri);
+            });
         }
     }
 }

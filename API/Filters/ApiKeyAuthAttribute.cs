@@ -20,7 +20,6 @@ namespace API.Filters
                 context.Result = new UnauthorizedResult();
                 return;
             }
-
             var configuration = context.HttpContext.RequestServices.GetRequiredService<IConfiguration>();
             var apiKey = configuration.GetValue<string>("ApiKey");
 
