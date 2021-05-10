@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\RestApi\\RestApi\\Tweetbook.sdk.Sample\\Api.sdk.Sample.csproj": {}
+    "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj": {}
   },
   "projects": {
-    "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
+    "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
+        "projectUniqueName": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
         "projectName": "Api.Contracts",
-        "projectPath": "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
+        "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
         "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\obj\\",
+        "outputPath": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {
+    "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
-        "projectName": "Api.Sdk",
-        "projectPath": "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
+        "projectUniqueName": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
+        "projectName": "Api.Sdk.Sample",
+        "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
         "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\obj\\",
+        "outputPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
-                "projectPath": "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj"
+              "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {
+                "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj"
               }
             }
           }
@@ -97,12 +97,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Refit": {
-              "target": "Package",
-              "version": "[6.0.38, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -122,14 +116,14 @@
         }
       }
     },
-    "D:\\C#\\RestApi\\RestApi\\Tweetbook.sdk.Sample\\Api.sdk.Sample.csproj": {
+    "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\RestApi\\RestApi\\Tweetbook.sdk.Sample\\Api.sdk.Sample.csproj",
-        "projectName": "Api.sdk.Sample",
-        "projectPath": "D:\\C#\\RestApi\\RestApi\\Tweetbook.sdk.Sample\\Api.sdk.Sample.csproj",
+        "projectUniqueName": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
+        "projectName": "Api.Sdk",
+        "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
         "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\RestApi\\RestApi\\Tweetbook.sdk.Sample\\obj\\",
+        "outputPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,8 +140,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {
-                "projectPath": "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\Api.Sdk.csproj"
+              "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
+                "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj"
               }
             }
           }

@@ -104,11 +104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
+      "projectUniqueName": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
       "projectName": "Api.Sdk",
-      "projectPath": "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
+      "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\RestApi\\RestApi\\Api.Sdk\\obj\\",
+      "outputPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -125,8 +125,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
-              "projectPath": "D:\\C#\\RestApi\\RestApi\\Api.Contracts\\Api.Contracts.csproj"
+            "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
+              "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj"
             }
           }
         }

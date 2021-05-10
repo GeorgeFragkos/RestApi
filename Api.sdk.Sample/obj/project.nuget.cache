@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "82Yo//S+vEh9wORT+MKd4ciyKgKb5068JaR1R/46AbywiIt9jpC2/bKbUGYNMOHdHYn3kHse4iC1mzS+dzmx8w==",
+  "dgSpecHash": "i8dHNl47jEvkv/9qTO6zWClmwGxXPo46O81YqRSouaanGDf2iGlwbu3s1/hgY3cCn/ikfoCOmIqv39aL5m5yIg==",
   "success": true,
-  "projectFilePath": "D:\\C#\\RestApi\\RestApi\\Tweetbook.sdk.Sample\\Api.sdk.Sample.csproj",
+  "projectFilePath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\George\\.nuget\\packages\\refit\\6.0.38\\refit.6.0.38.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512"

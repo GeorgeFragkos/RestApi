@@ -1,5 +1,5 @@
 is_global = true
-build_property.RefitInternalNamespace = Api.sdk.Sample
+build_property.RefitInternalNamespace = Api.Sdk.Sample
 build_property.TargetFramework = net5.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 

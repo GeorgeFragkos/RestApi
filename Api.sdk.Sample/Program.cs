@@ -1,7 +1,6 @@
 ﻿using Api.Sdk;
 using API.Contracts.V1.Requests;
 using Refit;
-using System;
 using System.Threading.Tasks;
 
 namespace Tweetbook.sdk.Sample
@@ -16,11 +15,11 @@ namespace Tweetbook.sdk.Sample
             var api = RestService.For<IApi>("https://localhost:5001", new RefitSettings
             {
                 AuthorizationHeaderValueGetter = () => Task.FromResult(cachedToken)
-            }) ;
+            });
             var registerResponse = await identityApi.RegisterAsync(new UserRegistrationRequest
             {
                 Email = "george@gmail.com",
-                Password="Geo1234@"
+                Password = "Geo1234@"
             });
             var loginResponse = await identityApi.LoginAsync(new UserLoginRequest
             {
@@ -31,10 +30,10 @@ namespace Tweetbook.sdk.Sample
             cachedToken = loginResponse.Content.Token;
 
             var allPosts = await api.GetAllAsync();
-            var createdPost = await api.CreateAsync(new CreatePostRequest 
+            var createdPost = await api.CreateAsync(new CreatePostRequest
             {
                 Name = "Created by SDK",
-                Tags = new[] {"sdk"}
+                Tags = new[] { "sdk" }
             });
             var retrievedPost = await api.GetAsync(createdPost.Content.Id);
             var updatedPost = await api.UpdateAsync(createdPost.Content.Id, new UpdatePostRequest
