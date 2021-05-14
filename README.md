@@ -11,7 +11,7 @@ Versioning,
 Auto Mapper,
 Simple Integration Tests,
 An Api Sdk using Refit ,
-A simple custon Health Checks,
+A simple custom Health Checks,
 A simple custom Pagination 
 
 
