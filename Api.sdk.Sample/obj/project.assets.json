@@ -122,11 +122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
+      "projectUniqueName": "D:\\C#\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
       "projectName": "Api.Sdk.Sample",
-      "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
+      "projectPath": "D:\\C#\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk.Sample\\obj\\",
+      "outputPath": "D:\\C#\\Api\\RestApi\\Api.Sdk.Sample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -143,8 +143,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {
-              "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj"
+            "D:\\C#\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {
+              "projectPath": "D:\\C#\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj"
             }
           }
         }

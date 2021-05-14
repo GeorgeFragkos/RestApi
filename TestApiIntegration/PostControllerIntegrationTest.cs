@@ -1,7 +1,8 @@
-﻿using API;
+﻿using Api.Contracts.V1.Responses;
+using API;
 using API.Contracts.V1;
 using API.Contracts.V1.Requests;
-using API.Domain;
+using API.Contracts.V1.Responses;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
 using System.Collections.Generic;
@@ -39,7 +40,8 @@ namespace TestApiIntegration
 
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
-            (await response.Content.ReadAsAsync<List<Post>>()).Should().BeEmpty();
+            var desirializedResponse = await response.Content.ReadAsAsync<PagedResponse<PostResponse>>();
+            desirializedResponse.Data.Should().BeEmpty();
         }
 
         [Fact]
@@ -47,9 +49,12 @@ namespace TestApiIntegration
         {
             //Arrange
             await _integrationTest.AuthenticateAsync();
+
+            var tags = new List<string> { "tag"};
             var createdPost =await _integrationTest.CreatePostAsync(new CreatePostRequest 
             {
-                Name = "Test Post"
+                Name = "Test Post",
+                Tags = tags
             });
 
             //Act
@@ -57,9 +62,9 @@ namespace TestApiIntegration
 
             //Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
-            var returnedPost = await response.Content.ReadAsAsync<Post>();
-            returnedPost.Id.Should().Be(createdPost.Id);
-            returnedPost.Name.Should().Be("Test Post");
+            var serializedResponse = await response.Content.ReadAsAsync<Response<PostResponse>>();
+
+            serializedResponse.Data.Id.Should().Be(createdPost.Id);
         }
 
         [Fact]
@@ -67,9 +72,11 @@ namespace TestApiIntegration
         {
             //Arrange
             await _integrationTest.AuthenticateAsync();
+            var tags = new List<string> { "tag" };
             var createPost = await _integrationTest.CreatePostAsync(new CreatePostRequest
             {
-                Name = "Post to Delete"
+                Name = "Post to Delete",
+                Tags = tags
             });
             //Act
             var response = await Client.DeleteAsync(ApiRoutes.Posts.Delete.Replace("{postId}", createPost.Id.ToString()));

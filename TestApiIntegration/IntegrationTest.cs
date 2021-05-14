@@ -1,12 +1,10 @@
-﻿using API.Contracts.V1;
+﻿using Api.Contracts.V1.Responses;
+using API.Contracts.V1;
 using API.Contracts.V1.Requests;
 using API.Contracts.V1.Responses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Newtonsoft.Json;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace TestApiIntegration
@@ -27,21 +25,31 @@ namespace TestApiIntegration
 
         private async Task<string> GetJwtAsync()
         {
-            var response = await Client.PostAsJsonAsync(ApiRoutes.Identity.Register, new UserRegistrationRequest
+            await Client.PostAsJsonAsync(ApiRoutes.Identity.Register, new UserRegistrationRequest
             {
 
                 Email = "test@test.com",
                 Password = "Test12345@"
             });
 
-            var registrationResponse = await response.Content.ReadAsAsync<AuthSuccessResponse>();
-            return registrationResponse.Token;
+            var loginResponse = await Client.PostAsJsonAsync(ApiRoutes.Identity.Login, new UserLoginRequest
+            {
+
+                Email = "test@test.com",
+                Password = "Test12345@"
+            });
+
+            var response = await loginResponse.Content.ReadAsAsync<AuthSuccessResponse>();
+            return response.Token;
         }
 
         public  async Task<PostResponse> CreatePostAsync(CreatePostRequest request)
         {
             var response =await Client.PostAsJsonAsync(ApiRoutes.Posts.Create, request);
-            return await response.Content.ReadAsAsync<PostResponse>();
+
+            var postResponse = await response.Content.ReadAsAsync<Response<PostResponse>>();
+
+            return postResponse.Data;
         }
     }
 }

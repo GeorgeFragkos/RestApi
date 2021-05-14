@@ -23,14 +23,7 @@
             <summary>
             Creates a tag in the system
             </summary>
-            <remarks>
-                Sample **request** : 
-                    Post /api/v1/tags
-                    {
-                        "name" : "Some name"
-                    }
-            </remarks>
-            <response code ="200">Creates a tag in the system</response>
+            <response code ="201">Creates a tag in the system</response>
             <response code="400">Unable to create the tag due to validation error</response>
         </member>
     </members>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\Git-Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj": {}
+    "D:\\C#\\Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj": {}
   },
   "projects": {
-    "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
+    "D:\\C#\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
+        "projectUniqueName": "D:\\C#\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
         "projectName": "Api.Contracts",
-        "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
+        "projectPath": "D:\\C#\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
         "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\obj\\",
+        "outputPath": "D:\\C#\\Api\\RestApi\\Api.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\C#\\Git-Api\\RestApi\\API\\API.csproj": {
+    "D:\\C#\\Api\\RestApi\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Git-Api\\RestApi\\API\\API.csproj",
+        "projectUniqueName": "D:\\C#\\Api\\RestApi\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\C#\\Git-Api\\RestApi\\API\\API.csproj",
+        "projectPath": "D:\\C#\\Api\\RestApi\\API\\API.csproj",
         "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Git-Api\\RestApi\\API\\obj\\",
+        "outputPath": "D:\\C#\\Api\\RestApi\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
-                "projectPath": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj"
+              "D:\\C#\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
+                "projectPath": "D:\\C#\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj"
               }
             }
           }
@@ -189,14 +189,14 @@
         }
       }
     },
-    "D:\\C#\\Git-Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj": {
+    "D:\\C#\\Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Git-Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
+        "projectUniqueName": "D:\\C#\\Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
         "projectName": "TestApiIntegration",
-        "projectPath": "D:\\C#\\Git-Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
+        "projectPath": "D:\\C#\\Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
         "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Git-Api\\RestApi\\TestApiIntegration\\obj\\",
+        "outputPath": "D:\\C#\\Api\\RestApi\\TestApiIntegration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -213,8 +213,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\C#\\Git-Api\\RestApi\\API\\API.csproj": {
-                "projectPath": "D:\\C#\\Git-Api\\RestApi\\API\\API.csproj"
+              "D:\\C#\\Api\\RestApi\\API\\API.csproj": {
+                "projectPath": "D:\\C#\\Api\\RestApi\\API\\API.csproj"
               }
             }
           }
@@ -236,6 +236,10 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[10.1.0, )"
+            },
+            "Json.Net": {
+              "target": "Package",
+              "version": "[1.0.31, )"
             },
             "Microsoft.AspNetCore.Mvc.Testing": {
               "target": "Package",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x0PSEdwragHM2nB74M3re7m2V3aMwxP5b02hZYdZPwwWEpG2qspmvPBu68X4e4ozFM/+GEPd4A97vi0TuY2Ijg==",
+  "dgSpecHash": "p2fiyPUFj/FF2804S0UvTF18SyrJo3LlKd5EeaWsuIn1F93YFN2tKTxMDBUhkkKMyBOsiEHMaPPA9pYJ6qG6uA==",
   "success": true,
-  "projectFilePath": "D:\\C#\\Git-Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
+  "projectFilePath": "D:\\C#\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
