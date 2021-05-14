@@ -7,7 +7,7 @@ namespace API.Services
 {
     public interface IPostService
     {
-        Task<List<Post>> GetPostsAsync(PaginationFilter paginationFilter = null);
+        Task<List<Post>> GetPostsAsync(GetAllPostsFillter filter=null, PaginationFilter paginationFilter = null);
 
         Task<Post> GetPostByIdAsync(Guid postId);
 
@@ -17,7 +17,7 @@ namespace API.Services
 
         Task<bool> CreatePostAsync(Post post);
 
-        Task<bool> UserOwnsPstAsync(Guid postId, string userId);
+        Task<bool> UserOwnsPostAsync(Guid postId, string userId);
 
         Task<Tag> GetTagByNameAsync(string tagName);
         Task<bool> CreateTagAsync(Tag newTag);

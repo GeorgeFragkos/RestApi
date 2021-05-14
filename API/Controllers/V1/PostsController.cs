@@ -33,12 +33,14 @@ namespace API.Controllers.V1
         }
 
         [HttpGet(ApiRoutes.Posts.GetAll)]
-        public async Task<IActionResult> GetAll([FromQuery]PaginationQuery paginationQuery)
+        public async Task<IActionResult> GetAll([FromQuery]GetAllPostsQuery query,[FromQuery]PaginationQuery paginationQuery)
         {
             var pagination = _mapper.Map<PaginationFilter>(paginationQuery);
 
-            var posts = await _postService.GetPostsAsync(pagination);
+            var filter = _mapper.Map<GetAllPostsFillter>(query);
 
+            var posts = await _postService.GetPostsAsync(filter,pagination);
+            
             var postResponse = _mapper.Map<List<PostResponse>>(posts);
 
             if (pagination == null || pagination.PageNumber < 1 || pagination.PageSize < 1) 
@@ -84,7 +86,7 @@ namespace API.Controllers.V1
         public async Task<IActionResult> Update([FromRoute] Guid postId, [FromBody] UpdatePostRequest request)
         {
 
-            var userOwnsPost = await _postService.UserOwnsPstAsync(postId, HttpContext.GetUserId());
+            var userOwnsPost = await _postService.UserOwnsPostAsync(postId, HttpContext.GetUserId());
 
             if (!userOwnsPost)
                 return BadRequest(new { error = "You do not own this post" });
@@ -107,7 +109,7 @@ namespace API.Controllers.V1
         public async Task<IActionResult> Delete([FromRoute] Guid postId)
         {
 
-            var userOwnsPost = await _postService.UserOwnsPstAsync(postId, HttpContext.GetUserId());
+            var userOwnsPost = await _postService.UserOwnsPostAsync(postId, HttpContext.GetUserId());
 
             if (!userOwnsPost)
                 return BadRequest(new { error = "You do not own this post" });

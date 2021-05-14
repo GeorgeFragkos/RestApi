@@ -13,6 +13,7 @@ namespace API.Mapping
         public RequestToDomainProfile()
         {
             CreateMap<PaginationQuery, PaginationFilter>();
+            CreateMap <GetAllPostsQuery,GetAllPostsFillter>();
         }
     }
 }

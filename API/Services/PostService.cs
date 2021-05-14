@@ -58,17 +58,23 @@ namespace API.Services
             return await _dataContext.Posts.Include(x => x.Tags).SingleOrDefaultAsync(x => x.Id == postId);
         }
 
-        public async Task<List<Post>> GetPostsAsync(PaginationFilter paginationFilter = null)
+        public async Task<List<Post>> GetPostsAsync(GetAllPostsFillter filter, PaginationFilter paginationFilter = null)
         {
+            var queryable = _dataContext.Posts.AsQueryable();
+
             if (paginationFilter == null)
             {
-                return await _dataContext.Posts.Include(x => x.Tags).ToListAsync();  
+                return await queryable.Include(x => x.Tags).ToListAsync();
             }
 
+            queryable = AddFilterOnQuerry(filter, queryable);
+
             var skip = (paginationFilter.PageNumber - 1) * paginationFilter.PageSize;
-            return await _dataContext.Posts.Include(x => x.Tags)
+            return await queryable.Include(x => x.Tags)
                 .Skip(skip).Take(paginationFilter.PageSize).ToListAsync();
         }
+
+        
 
         public async Task<bool> UpdatePostAsync(Post postToUpdate)
         {
@@ -77,7 +83,7 @@ namespace API.Services
             return updated > 0;
         }
 
-        public async Task<bool> UserOwnsPstAsync(Guid postId, string userId)
+        public async Task<bool> UserOwnsPostAsync(Guid postId, string userId)
         {
             var post = await _dataContext.Posts.AsNoTracking().SingleOrDefaultAsync(x => x.Id == postId);
 
@@ -132,6 +138,16 @@ namespace API.Services
                 }
             });
             return postTags;
+        }
+
+        private static IQueryable<Post> AddFilterOnQuerry(GetAllPostsFillter filter, IQueryable<Post> queryable)
+        {
+            if (!string.IsNullOrEmpty(filter?.userId))
+            {
+                queryable = queryable.Where(x => x.UserId == filter.userId);
+            }
+
+            return queryable;
         }
     }
 }
