@@ -19,7 +19,7 @@ jobs:
       working-directory: ./API
     - name: Test
       run: dotnet test --configuration Release
-      working-directory: .
+      working-directory: ./TestApiIntegration
   
       
       
