@@ -16,6 +16,6 @@ jobs:
       with:
         dotnet-version: '5.0' 
     - name: Build with dotnet
-      run: dotnet build --configuration Debug
+      run: dotnet build --configuration Api Release
  
   
