@@ -19,6 +19,6 @@ jobs:
         dotnet-version: '5.0'
     - name: Build
       run: dotnet build --configuration Release
-      working-directory: ./
+      working-directory: ./API
       
   
