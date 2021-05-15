@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7itIfMxgwHefXNL08MIE8Sqo0JCDQmWn/yGe+tteMbDyaYS12JFJ4eWQ1NYoeUBbfRLVt8cuIhqF5f++R2+jcw==",
+  "dgSpecHash": "Q/sRHMJPeol5ikISZ3UP709gHQppbPggLljUQKumXRa2azUGDoTNyErNkMncDi6lYaHRSOZDQPvlAc7bJFSMag==",
   "success": true,
-  "projectFilePath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
+  "projectFilePath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\George\\.nuget\\packages\\refit\\6.0.38\\refit.6.0.38.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512"

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {}
+    "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj": {}
   },
   "projects": {
     "D:\\C#\\Demo\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
@@ -39,6 +39,70 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
+        "projectName": "Api.Sdk.Sample",
+        "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
+        "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {
+                "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Refit": {
+              "target": "Package",
+              "version": "[6.0.38, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

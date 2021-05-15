@@ -36,6 +36,20 @@
         "runtime": {
           "bin/placeholder/Api.Contracts.dll": {}
         }
+      },
+      "Api.Sdk/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Api.Contracts": "1.0.0",
+          "Refit": "6.0.38"
+        },
+        "compile": {
+          "bin/placeholder/Api.Sdk.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Sdk.dll": {}
+        }
       }
     }
   },
@@ -90,11 +104,16 @@
       "type": "project",
       "path": "../Api.Contracts/Api.Contracts.csproj",
       "msbuildProject": "../Api.Contracts/Api.Contracts.csproj"
+    },
+    "Api.Sdk/1.0.0": {
+      "type": "project",
+      "path": "../Api.Sdk/Api.Sdk.csproj",
+      "msbuildProject": "../Api.Sdk/Api.Sdk.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Api.Contracts >= 1.0.0",
+      "Api.Sdk >= 1.0.0",
       "Refit >= 6.0.38"
     ]
   },
@@ -104,11 +123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
-      "projectName": "Api.Sdk",
-      "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj",
+      "projectUniqueName": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
+      "projectName": "Api.Sdk.Sample",
+      "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\Api.Sdk.Sample.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\obj\\",
+      "outputPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk.Sample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -125,8 +144,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\C#\\Demo\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj": {
-              "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj"
+            "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj": {
+              "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Sdk\\Api.Sdk.csproj"
             }
           }
         }

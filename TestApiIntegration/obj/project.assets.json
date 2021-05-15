@@ -10408,11 +10408,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
+      "projectUniqueName": "D:\\C#\\Demo\\Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
       "projectName": "TestApiIntegration",
-      "projectPath": "D:\\C#\\Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
+      "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\TestApiIntegration\\TestApiIntegration.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Api\\RestApi\\TestApiIntegration\\obj\\",
+      "outputPath": "D:\\C#\\Demo\\Api\\RestApi\\TestApiIntegration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10429,8 +10429,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\C#\\Api\\RestApi\\API\\API.csproj": {
-              "projectPath": "D:\\C#\\Api\\RestApi\\API\\API.csproj"
+            "D:\\C#\\Demo\\Api\\RestApi\\API\\API.csproj": {
+              "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\API\\API.csproj"
             }
           }
         }

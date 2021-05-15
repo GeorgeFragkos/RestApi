@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
+      "projectUniqueName": "D:\\C#\\Demo\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
       "projectName": "Api.Contracts",
-      "projectPath": "D:\\C#\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
+      "projectPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Contracts\\Api.Contracts.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Api\\RestApi\\Api.Contracts\\obj\\",
+      "outputPath": "D:\\C#\\Demo\\Api\\RestApi\\Api.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",

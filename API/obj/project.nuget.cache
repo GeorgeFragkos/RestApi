@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AkMQMSXwIuvgcceg+dXdbb0WPyQutlE/NPqlBJSFXIB2/I0eR1+nZ+i0AEcbna+TKfJoTNt3Vo2Yj2CIVdLesg==",
+  "dgSpecHash": "ktQzPMy3AIgPGa35BSig8S4pmWyiB5Edt+3BqS2qea6wkUL1uxFRS7z+fH5pUkNBOR9j9OA/pU+Lb7OPH6MCTA==",
   "success": true,
-  "projectFilePath": "D:\\C#\\Api\\RestApi\\API\\API.csproj",
+  "projectFilePath": "D:\\C#\\Demo\\Api\\RestApi\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\George\\.nuget\\packages\\aspnetcore.authentication.apikey\\5.1.0\\aspnetcore.authentication.apikey.5.1.0.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
