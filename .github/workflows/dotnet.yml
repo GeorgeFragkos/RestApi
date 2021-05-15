@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -17,8 +17,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0
-    - name: Build
-      run: dotnet build --Configuration Release
+    - name: MSBuild
+      working-directory: API
+      run: msbuild API.csproj
   
  
   
