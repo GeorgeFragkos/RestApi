@@ -1,6 +1,7 @@
 ﻿using API.Contracts.V1;
 using API.Contracts.V1.Requests;
 using API.Contracts.V1.Responses;
+using API.External;
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
@@ -62,6 +63,23 @@ namespace API.Controllers.V1
         public async Task<IActionResult> Refresh([FromBody] RefreshTokenRequest request)
         {
             var authResponse = await _identityService.RefreshTokenAsync(request.Token, request.RefreshToken);
+
+            if (!authResponse.Success)
+                return BadRequest(new AuthFailedResponse
+                {
+                    Errors = authResponse.ErrorMessage
+                });
+
+            return Ok(new AuthSuccessResponse
+            {
+                Token = authResponse.Token,
+                RefreshToken = authResponse.RefreshToken
+            });
+        }
+        [HttpPost(ApiRoutes.Identity.FacebookAuth)]
+        public async Task<IActionResult> Login([FromBody] UserFacebookAutRequest request)
+        {
+            var authResponse = await _identityService.LoginWithFacebookAsync(request.Token);
 
             if (!authResponse.Success)
                 return BadRequest(new AuthFailedResponse

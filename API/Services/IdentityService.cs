@@ -19,13 +19,17 @@ namespace API.Services
         private readonly UserManager<IdentityUser> _userManager;
         private readonly JwtSettings _jwtSettings;
         private readonly TokenValidationParameters _tokenValidationParameters;
-        private readonly Data.DataContext _dataContext;
-        public IdentityService(UserManager<IdentityUser> userManager, JwtSettings jwtSettings, TokenValidationParameters tokenValidationParameters, Data.DataContext dataContext)
+        private readonly DataContext _dataContext;
+        private readonly IFacebookAuthService _facebookAuthService;
+        public IdentityService(UserManager<IdentityUser> userManager, 
+            JwtSettings jwtSettings, TokenValidationParameters tokenValidationParameters, 
+            DataContext dataContext,IFacebookAuthService facebookAuthService)
         {
             _userManager = userManager;
             _jwtSettings = jwtSettings;
             _tokenValidationParameters = tokenValidationParameters;
             _dataContext = dataContext;
+            _facebookAuthService = facebookAuthService;
         }
 
         public async Task<AuthenticationResult> LoginAsync(string email, string password)
@@ -107,6 +111,7 @@ namespace API.Services
                 return await GenerateAuthenticationResultForUserAsync(user);
             }
 
+           
             await _userManager.AddClaimAsync(user, new Claim("role", "Poster"));
             await _userManager.AddToRoleAsync(user, "Poster");
             return await GenerateAuthenticationResultForUserAsync(user);
@@ -199,6 +204,36 @@ namespace API.Services
             var user = await _userManager
                 .FindByIdAsync(validatedToken.Claims
                 .SingleOrDefault(x => x.Type == "id").Value);
+            return await GenerateAuthenticationResultForUserAsync(user);
+        }
+
+        public async  Task<AuthenticationResult> LoginWithFacebookAsync(string accessToken)
+        {
+            var validatedTokenResult = await _facebookAuthService.ValidateAccessTokenAsync(accessToken);
+
+            if (!validatedTokenResult.Data.IsValid)
+                return new AuthenticationResult { ErrorMessage = new[] { "Invalid Facebook token" } };
+
+            var userInfo = await _facebookAuthService.GetUserInfoAsync(accessToken);
+
+            var user = await _userManager.FindByEmailAsync(userInfo.Email);
+
+            if (user == null)
+            {
+                var identityUser = new IdentityUser
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Email = userInfo.Email,
+                    UserName = userInfo.Email
+                };
+
+                var createdResult = await _userManager.CreateAsync(identityUser);
+                if (!createdResult.Succeeded)
+                    return new AuthenticationResult { ErrorMessage = new[] { "Something went wrong" } };
+
+                return await GenerateAuthenticationResultForUserAsync(identityUser);
+            }
+
             return await GenerateAuthenticationResultForUserAsync(user);
         }
     }

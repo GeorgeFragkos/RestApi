@@ -20,7 +20,7 @@ namespace API
 
             using (var serviceScope = host.Services.CreateScope())
             {
-                var dbContext = serviceScope.ServiceProvider.GetRequiredService<Data.DataContext>();
+                var dbContext = serviceScope.ServiceProvider.GetRequiredService<DataContext>();
 
                 await dbContext.Database.MigrateAsync();
 

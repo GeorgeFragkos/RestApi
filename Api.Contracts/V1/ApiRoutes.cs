@@ -28,6 +28,8 @@ namespace API.Contracts.V1
             public const string Register = Base + "/identity/register";
 
             public const string Refresh = Base + "/identity/refresh";
+
+            public const string FacebookAuth = Base + "/identity/auth/facebook";
         }
 
         public static class Tags
@@ -39,6 +41,7 @@ namespace API.Contracts.V1
             public const string Create = Base + "/tags";
 
             public const string Delete = Base + "/tags/{tagName}";
+
 
         }
     }

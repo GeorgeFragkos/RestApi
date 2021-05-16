@@ -1,0 +1,51 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <fb:login-button scope="public_profile,email"
+                     onlogin="checkLoginState();">
+    </fb:login-button>
+
+    <div id="authStatus">
+
+    </div>
+</div>
+
+@section Scripts
+{
+
+ <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+          appId: '162683532462617',
+          cookie     : true,
+          xfbml      : true, 
+          version: 'v10.0'
+        });
+
+        FB.AppEvents.logPageView();
+
+      };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+
+     function checkLoginState()
+     {
+         FB.getLoginStatus(function (response) {
+             $("#authStatus").html("<code>" + JSON.stringify(response, null, 2)+"</code>");
+         }); 
+     }
+ </script>
+}
