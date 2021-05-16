@@ -3,9 +3,6 @@ name: .NET
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
 jobs:
   build:
 
@@ -20,8 +17,8 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
       working-directory: ./API
-    - name: Build
-      run: dotnet build --configuration Release
-      working-directory: ./API.sdk.Sample
+
+  
+      
       
   
