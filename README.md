@@ -5,6 +5,7 @@ A Demo .Net core 5 restful Api implements :
 Swagger,
 JWT Authentication,
 Api Key Authentication,
+Facebook Authentication,
 Authorization,
 CRUD operations ,
 Versioning,
